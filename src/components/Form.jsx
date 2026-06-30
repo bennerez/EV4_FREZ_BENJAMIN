@@ -19,14 +19,17 @@ function Form({ addOrUpdateItem, itemToEdit }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="crud-form" onSubmit={handleSubmit}>
             <input
+                className="crud-input"
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Enter item"
             />
-            <button type="submit">{itemToEdit ? "Actualizar" : "Agregar"}</button>
+            <button className="btn-submit" type="submit">
+                {itemToEdit ? "Actualizar" : "Agregar"}
+            </button>
         </form>
     );
 }

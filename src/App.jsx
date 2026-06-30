@@ -40,8 +40,9 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>CRUD con LocalStorage</h1>
+    // Agregamos la clase de la tarjeta central
+    <div className="crud-card">
+      <h2 className="crud-title">CRUD con LocalStorage</h2>
       <Form 
         addOrUpdateItem={addOrUpdateItem} 
         itemToEdit={itemToEdit} 
